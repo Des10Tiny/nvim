@@ -23,3 +23,6 @@ vim.opt.mouse = "a"           -- Enable mouse support
 vim.opt.ignorecase = true     -- Case-insensitive searching...
 vim.opt.smartcase = true      -- ...unless the query contains a capital letter
 vim.opt.termguicolors = true  -- Enable 24-bit RGB color support
+
+-- Disable automatic code folding when opening a file
+vim.opt.foldenable = false
