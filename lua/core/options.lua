@@ -26,3 +26,10 @@ vim.opt.termguicolors = true  -- Enable 24-bit RGB color support
 
 -- Disable automatic code folding when opening a file
 vim.opt.foldenable = false
+
+-- Tab navigation
+local keymap = vim.keymap
+keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
+keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
+keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
